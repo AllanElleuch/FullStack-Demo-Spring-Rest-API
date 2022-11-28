@@ -67,10 +67,13 @@ See file `Place API.postman_collection.json`
 
 ## security focus
 - Implement [TOP 10 OWASP API best practise](https://owasp.org/www-project-api-security/)
-- Implement Swagger and test proper implementation by using [Security Testing tool for dynamic assessment of an API’s security state](https://owasp.org/www-community/api_security_tools) like [API clarity](https://github.com/openclarity/apiclarity), [Astra](https://github.com/flipkart-incubator/Astra) or [Automatic API Attack tool](https://github.com/imperva/automatic-api-attack-tool) 
 - Add JWT token  authentication 
 - Add DockerFile for containerization
-- Integration [Nikto Web Server Scan](https://github.com/sullo/nikto) when the project is deployed on a server for checking dynamically vulnerabilities
+- Add audit logs
+- Tool that can be integrated in a CI
+    - Integrate **Static Application Security Testing** (SAST) components. SAST scans the application code at rest to discover faulty code posing a security threat. Tools:  [SAST-Scan](https://github.com/ShiftLeftSecurity/sast-scan) or OWASP dependency-check
+    - Integrate **Dynamic application security testing** (DAST). DAST tests the running application and has no access to its source code. Tools for web app scanner: [Nikto Web Server Scan](https://github.com/sullo/nikto), [OWASP Zed Attack Proxy (ZAP](https://www.zaproxy.org/) 
+    - After implementing a Swagger it is possible to test the proper implementation of the openAPI specification by using [Security Testing tool for dynamic assessment of an API’s security state](https://owasp.org/www-community/api_security_tools) like [API clarity](https://github.com/openclarity/apiclarity), [Astra](https://github.com/flipkart-incubator/Astra) or [Automatic API Attack tool](https://github.com/imperva/automatic-api-attack-tool) 
 
 ## Other improvement
 - Integration in GithubAction
