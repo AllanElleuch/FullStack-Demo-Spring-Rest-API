@@ -17,16 +17,16 @@ Spring boot app backend coupled with Angular 13+ for front-end.
 ## Screenshots
 
 
-![Index page](https://github.com/AllanElleuch/FullStack-Demo-Spring-Rest-API/blob/main/resources/Screenshot-index.PNG "Index page")
+![Index page](https://github.com/AllanElleuch/FullStack-Demo-Spring-Rest-API/blob/main/resources/Screenshot-index.PNG?raw=true "Index page")
 
-![Place detail page](https://github.com/AllanElleuch/FullStack-Demo-Spring-Rest-API/blob/main/resources/Screenshot-place-detail.PNG "Place detail")
+![Place detail page](https://github.com/AllanElleuch/FullStack-Demo-Spring-Rest-API/blob/main/resources/Screenshot-place-detail.PNG?raw=true "Place detail")
 
 
 
 
 # Getting started 
 
-## Pre-requisites
+### Pre-requisites
 
 * JDK 19
 
