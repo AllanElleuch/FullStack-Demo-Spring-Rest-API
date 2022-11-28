@@ -1,0 +1,36 @@
+<div *ngIf="place">
+    <div class="container">
+        <div class="row">
+
+            <div class="col">
+
+                <p><strong> Name:</strong> {{place.name  | uppercase}} </p>
+                <p><strong>Address:</strong> {{place.address}}  </p>
+            </div>
+
+            <div class="col">
+
+                <h2>Opening hours</h2>
+
+
+                <table>
+                    <tr>
+                        <th scope="col">Day</th>
+                        <th scope="col">Time</th>
+                    </tr>
+
+
+                    <tr *ngFor="let period of place.periods">
+                        <td>{{ renderPeriodDay(period) }} </td>
+                        <td>{{ period.start }} - {{ period.end }}</td>
+                    </tr>
+
+
+                </table>
+
+
+            </div>
+        </div>
+    </div>
+    <button (click)="goBack()" type="button">go back</button>
+</div>

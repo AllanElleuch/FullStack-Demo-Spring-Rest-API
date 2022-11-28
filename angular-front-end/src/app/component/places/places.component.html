@@ -1,0 +1,11 @@
+<h2>Places</h2>
+
+<ul class="places">
+    <li *ngFor="let place of places">
+        <a routerLink="/detail/{{place.id}}">
+            <span class="">[{{place.id}}]</span> {{place.name}}
+        </a>
+
+
+    </li>
+</ul>

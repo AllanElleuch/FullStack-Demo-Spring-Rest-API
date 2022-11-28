@@ -1,12 +1,12 @@
 plugins {
 	id 'java'
-	id 'org.springframework.boot' version '2.7.5'
+	id 'org.springframework.boot' version '2.5.6'
 	id 'io.spring.dependency-management' version '1.1.0'
 }
 
 group = 'my.company'
 version = '0.0.1-SNAPSHOT'
-sourceCompatibility = '19'
+sourceCompatibility = '11'
 
 repositories {
 	mavenCentral()
@@ -16,7 +16,11 @@ repositories {
 
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter'
+	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+	implementation 'org.springframework.boot:spring-boot-starter-web'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	implementation group: 'com.h2database', name: 'h2', version: '1.4.200' // Dependency with 1 known CVE-2022-23221
+
 }
 
 tasks.named('test') {
