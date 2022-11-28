@@ -47,8 +47,10 @@ See file `Place API.postman_collection.json`
 
 
 
-## Improvement
+## Improvement with security focus
+- Implement [TOP 10 OWASP best practise](https://owasp.org/www-project-api-security/)
 - Add MockMvc testing case
-- Add Swagger 
+- Implement Swagger and test proper implementation by using [Security Testing tool for dynamic assessment of an API’s security state](https://owasp.org/www-community/api_security_tools) like [API clarity](https://github.com/openclarity/apiclarity) or [Automatic API Attack tool](https://github.com/imperva/automatic-api-attack-tool) 
 - Add JWT token  authentication 
-- Add Dockerisation for quick demo
+- Add DockerFile for containerization
+- Integration [Nikto Web Server Scan](https://github.com/sullo/nikto) when the project is deployed on a server for checking dynamically vulnerabilities.
