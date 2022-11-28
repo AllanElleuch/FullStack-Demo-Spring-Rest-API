@@ -5,6 +5,12 @@
 !**/src/main/**/build/
 !**/src/test/**/build/
 
+### Npm ###
+**/node_modules
+
+### Angular ###
+**/.angular
+
 ### STS ###
 **/.apt_generated
 **/.classpath
