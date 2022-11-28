@@ -23,10 +23,17 @@ Spring boot app backend coupled with Angular 13+ for front-end.
 * JDK 19
 
 ### Start Spring Boot
-`./gradlew bootRun`
+```cmd
+cd spring-boot-rest-api
+./gradlew bootRun
+```
 
 #### Start Angular 
-`ng start`
+```cmd
+cd angular-front-end
+npm install
+npm start
+```
 
 ## Testing
 
